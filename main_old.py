@@ -46,7 +46,7 @@ def hitung_gaji(golonganGaji, nama, lembur,hari):
         case _ :
             print(F"golongan gaji pokok tidak ada tolong masukan ulang")
             exit()
-
+            
     total_gaji = gapok + (lembur * hasil_lembur)
     data = {"nama":nama,"golongan":golonganGaji, "total_gaji":total_gaji,"jam_lembur": lembur, "total_lembur":lembur * hasil_lembur,"gaji_format": f"Rp {total_gaji:,.0f}".replace(',', '.') }
     return data
